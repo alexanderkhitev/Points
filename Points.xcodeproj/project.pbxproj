@@ -21,6 +21,10 @@
 		343B2EB128D87BD000F8E6EF /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EB028D87BD000F8E6EF /* EntryViewModel.swift */; };
 		343B2EB528D8812600F8E6EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 343B2EB728D8812600F8E6EF /* Localizable.strings */; };
 		343B2EBB28D89B0000F8E6EF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EBA28D89B0000F8E6EF /* String.swift */; };
+		343B2EC528D8B76F00F8E6EF /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EC428D8B76F00F8E6EF /* ProgressHUD.swift */; };
+		343B2EC828D8B87F00F8E6EF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 343B2EC728D8B87F00F8E6EF /* Alamofire */; };
+		343B2ECB28D8B8A900F8E6EF /* PointsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2ECA28D8B8A900F8E6EF /* PointsAPI.swift */; };
+		343B2ECE28D8DB0F00F8E6EF /* EntryViewFocusField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2ECD28D8DB0F00F8E6EF /* EntryViewFocusField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,9 @@
 		343B2EB628D8812600F8E6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		343B2EB828D8812900F8E6EF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		343B2EBA28D89B0000F8E6EF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		343B2EC428D8B76F00F8E6EF /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		343B2ECA28D8B8A900F8E6EF /* PointsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsAPI.swift; sourceTree = "<group>"; };
+		343B2ECD28D8DB0F00F8E6EF /* EntryViewFocusField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewFocusField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343B2EC828D8B87F00F8E6EF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +164,7 @@
 		343B2EA328D873B300F8E6EF /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				343B2EC228D8B74500F8E6EF /* Common */,
 				343B2EAD28D87ADD00F8E6EF /* Entry */,
 				343B2EA428D875A400F8E6EF /* Main */,
 			);
@@ -173,6 +182,7 @@
 		343B2EA528D8770300F8E6EF /* Cores */ = {
 			isa = PBXGroup;
 			children = (
+				343B2EC928D8B88600F8E6EF /* Network */,
 				343B2EA628D8771100F8E6EF /* Navigation */,
 			);
 			path = Cores;
@@ -191,8 +201,9 @@
 		343B2EAD28D87ADD00F8E6EF /* Entry */ = {
 			isa = PBXGroup;
 			children = (
+				343B2ECC28D8DAFB00F8E6EF /* Models */,
 				343B2EAE28D87AF400F8E6EF /* EntryView.swift */,
-				343B2EB028D87BD000F8E6EF /* EntryViewModel.swift */,
+				343B2ECD28D8DB0F00F8E6EF /* EntryViewFocusField.swift */,
 			);
 			path = Entry;
 			sourceTree = "<group>";
@@ -213,6 +224,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		343B2EC228D8B74500F8E6EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EC328D8B74C00F8E6EF /* HUDs */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		343B2EC328D8B74C00F8E6EF /* HUDs */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EC428D8B76F00F8E6EF /* ProgressHUD.swift */,
+			);
+			path = HUDs;
+			sourceTree = "<group>";
+		};
+		343B2EC928D8B88600F8E6EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				343B2ECA28D8B8A900F8E6EF /* PointsAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		343B2ECC28D8DAFB00F8E6EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EB028D87BD000F8E6EF /* EntryViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,6 +272,9 @@
 			dependencies = (
 			);
 			name = Points;
+			packageProductDependencies = (
+				343B2EC728D8B87F00F8E6EF /* Alamofire */,
+			);
 			productName = Points;
 			productReference = 343B2E7528D8711900F8E6EF /* Points.app */;
 			productType = "com.apple.product-type.application";
@@ -302,6 +348,9 @@
 				ru,
 			);
 			mainGroup = 343B2E6C28D8711900F8E6EF;
+			packageReferences = (
+				343B2EC628D8B87F00F8E6EF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 343B2E7628D8711900F8E6EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -345,8 +394,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343B2ECE28D8DB0F00F8E6EF /* EntryViewFocusField.swift in Sources */,
 				343B2E7B28D8711900F8E6EF /* AppView.swift in Sources */,
+				343B2ECB28D8B8A900F8E6EF /* PointsAPI.swift in Sources */,
 				343B2E7928D8711900F8E6EF /* PointsApp.swift in Sources */,
+				343B2EC528D8B76F00F8E6EF /* ProgressHUD.swift in Sources */,
 				343B2EAC28D8797400F8E6EF /* AppCoordinator.swift in Sources */,
 				343B2EB128D87BD000F8E6EF /* EntryViewModel.swift in Sources */,
 				343B2EAA28D8775900F8E6EF /* MainRoute.swift in Sources */,
@@ -689,6 +741,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		343B2EC628D8B87F00F8E6EF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		343B2EC728D8B87F00F8E6EF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 343B2EC628D8B87F00F8E6EF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 343B2E6D28D8711900F8E6EF /* Project object */;
 }

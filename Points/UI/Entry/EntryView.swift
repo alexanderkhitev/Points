@@ -10,12 +10,17 @@ import SwiftUI
 struct EntryView: View {
     @StateObject private var viewModel: EntryViewModel
 
+    @FocusState private var focusField: EntryViewFocusField?
+
     init(viewModel: EntryViewModel = .init()) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
 
     var body: some View {
         content
+            .onAppear {
+                focusField = .pointsField
+            }
             .navigationTitle("Points")
     }
 
@@ -55,6 +60,7 @@ struct EntryView: View {
         .textFieldStyle(.roundedBorder)
         .multilineTextAlignment(.center)
         .keyboardType(.asciiCapableNumberPad)
+        .focused($focusField, equals: EntryViewFocusField.pointsField)
     }
 
     @ViewBuilder
