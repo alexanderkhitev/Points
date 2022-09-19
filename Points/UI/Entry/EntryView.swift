@@ -44,17 +44,25 @@ struct EntryView: View {
 
     @ViewBuilder
     private var textField: some View {
-        TextField("sdsasadsadas",
-                  value: $viewModel.textFieldValue,
-                  formatter: viewModel.textFieldFormatter)
+        let bindingText = Binding {
+            viewModel.textFieldValue
+        } set: { newValue, transaction in
+            viewModel.textFieldValue = newValue.allowedOnlyPositiveNumbers()
+        }
+
+        TextField("Please entry number of points",
+                  text: bindingText)
+        .textFieldStyle(.roundedBorder)
+        .multilineTextAlignment(.center)
         .keyboardType(.asciiCapableNumberPad)
     }
 
     @ViewBuilder
     private var startButton: some View {
         Button("Start") {
-            
+
         }
+        .disabled(!viewModel.isValidNumber)
     }
 }
 
