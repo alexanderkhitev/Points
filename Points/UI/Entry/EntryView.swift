@@ -21,6 +21,9 @@ struct EntryView: View {
             .onAppear {
                 focusField = .pointsField
             }
+            .onChange(of: viewModel.hudItem, perform: { newValue in
+                manageProgressHUD(newValue)
+            })
             .navigationTitle("Points")
     }
 
@@ -66,10 +69,26 @@ struct EntryView: View {
     @ViewBuilder
     private var startButton: some View {
         Button("Start") {
-
+            focusField = nil
+            viewModel.requestPoints()
         }
         .disabled(!viewModel.isValidNumber)
     }
+
+    // MARK: - UI functions
+    private func manageProgressHUD(_ hudItem: ProgressHUDItem) {
+        if let result = hudItem.result {
+            switch result {
+            case .success:
+                ProgressHUD.showSucceed()
+            case .failure(let error):
+                ProgressHUD.showError(error.localizedDescription)
+            }
+        } else if hudItem.showProgressHUD {
+            ProgressHUD.show(interaction: false)
+        }
+    }
+
 }
 
 struct EntryView_Previews: PreviewProvider {
