@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct PointsApp: App {
+    @StateObject private var coordinator = AppCoordinator()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AppView()
+                .environmentObject(coordinator)
         }
     }
 }

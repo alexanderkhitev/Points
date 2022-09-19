@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Points
+
+  Created by Alexander Khitev on 9/19/22.
+  
+*/
+
+"Start" = "Поехали";
+"Request a specific number of points" = "Запрос определенного количества точек";
+"You can request from 1 to 1000 points" = "Можно запросить от 1 до 1000 точек";
