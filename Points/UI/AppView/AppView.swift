@@ -17,7 +17,8 @@ struct AppView: View {
                 .navigationDestination(for: MainRoute.self) { route in
                     switch route {
                     case .detail(let pointsHub):
-                        DetailPointsView(viewModel: .init(hub: pointsHub))
+                        DetailPointsView(viewModel: .init(hub: pointsHub,
+                                                          coordinator: coordinator))
                     }
                 }
         }

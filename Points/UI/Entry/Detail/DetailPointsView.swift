@@ -15,12 +15,55 @@ struct DetailPointsView: View {
     }
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        content
+            .onAppear {
+                viewModel.makeSections()
+            }
     }
+
+    @ViewBuilder
+    private var content: some View {
+        list
+    }
+
+    @ViewBuilder
+    private var list: some View {
+        List {
+            ForEach(viewModel.listSections) { section in
+                switch section {
+                case .list:
+                    listSection(section)
+                case .graph:
+                    graphSection(section)
+                }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func listSection(_ section: DetailPointsListSection) -> some View {
+        Section(section.title) {
+            ForEach(viewModel.hub.points) { point in
+                Text("x: \(point.x), y: \(point.y)")
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func graphSection(_ section: DetailPointsListSection) -> some View {
+        Section(section.title) {
+
+        }
+    }
+
 }
 
 struct DetailPointsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailPointsView(viewModel: .init(hub: .init()))
+        let mockPointsHUB = PointsHUBMock.instance()
+        NavigationStack {
+            DetailPointsView(viewModel: .init(hub: mockPointsHUB,
+                                              coordinator: .init()))
+        }
     }
 }

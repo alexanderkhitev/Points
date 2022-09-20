@@ -19,7 +19,6 @@ final class EntryViewModel: ObservableObject {
     private lazy var api = PointsAPI()
     // Networking properties
     private var pointsNumber: Int?
-    // env objc
     private let coordinator: AppCoordinator
 
     init(_ coordinator: AppCoordinator) {

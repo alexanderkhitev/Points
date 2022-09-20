@@ -25,6 +25,10 @@ struct PointsHUB: Codable {
         id = UUID()
         points = try container.decodeIfPresent([Point].self, forKey: .points) ?? []
     }
+
+    func fetchSortedPoints(_ points: [Point]) -> [Point] {
+        points.sorted(by: { $0.x < $1.x })
+    }
 }
 
 extension PointsHUB: Hashable {
