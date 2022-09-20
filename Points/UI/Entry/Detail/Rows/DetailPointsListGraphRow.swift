@@ -6,18 +6,32 @@
 //
 
 import SwiftUI
+import Charts
 
 struct DetailPointsListGraphRow: View {
     let pointsHUB: PointsHUB
 
     var body: some View {
-        Text("")
+        Chart(pointsHUB.sortedPoints) { point in
+            LineMark(x: .value("x", point.x),
+                     y: .value("y", point.y))
+            .lineStyle(.init(lineWidth: 3,
+                             lineCap: .round,
+                             lineJoin: .round))
+            .interpolationMethod(.catmullRom)
+            .symbol(.circle)
+        }
+        .frame(height: 300)
     }
 }
 
 struct DetailPointsListGraphRow_Previews: PreviewProvider {
     static var previews: some View {
-        let pointsHUB = PointsHUBMock.instance()
-        DetailPointsListGraphRow(pointsHUB: pointsHUB)
+        var pointsHUB = PointsHUBMock.instance()
+        pointsHUB.createSortedPoints()
+
+        return List {
+            DetailPointsListGraphRow(pointsHUB: pointsHUB)
+        }
     }
 }

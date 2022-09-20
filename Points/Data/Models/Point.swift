@@ -9,15 +9,15 @@ import Foundation
 
 struct Point: Codable, Hashable, Identifiable {
     let id: UUID
-    let x: CGFloat
-    let y: CGFloat
+    let x: Double
+    let y: Double
 
     enum CodingKeys: CodingKey, CaseIterable {
         case x
         case y
     }
 
-    init(x: CGFloat, y: CGFloat) {
+    init(x: Double, y: Double) {
         id = UUID()
         self.x = x
         self.y = y
