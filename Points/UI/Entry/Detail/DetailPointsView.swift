@@ -44,7 +44,7 @@ struct DetailPointsView: View {
     private func listSection(_ section: DetailPointsListSection) -> some View {
         Section(section.title) {
             ForEach(viewModel.hub.points) { point in
-                Text("x: \(point.x.description), y: \(point.y.description)")
+                DetailPointsListPointRow(point: point)
             }
         }
     }
@@ -52,7 +52,7 @@ struct DetailPointsView: View {
     @ViewBuilder
     private func graphSection(_ section: DetailPointsListSection) -> some View {
         Section(section.title) {
-
+            DetailPointsListGraphRow(pointsHUB: viewModel.hub)
         }
     }
 
