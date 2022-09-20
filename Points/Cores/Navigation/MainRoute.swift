@@ -7,7 +7,6 @@
 
 import Foundation
 
-enum MainRoute: Equatable, Hashable {
-    case detail
-    case detailGraph
+enum MainRoute: Hashable {
+    case detail(pointsHUB: PointsHUB)
 }

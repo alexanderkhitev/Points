@@ -7,6 +7,7 @@
 
 import Foundation
 import Combine
+import SwiftUI
 
 final class EntryViewModel: ObservableObject {
     @Published var textFieldValue = ""
@@ -18,8 +19,11 @@ final class EntryViewModel: ObservableObject {
     private lazy var api = PointsAPI()
     // Networking properties
     private var pointsNumber: Int?
+    // env objc
+    private let coordinator: AppCoordinator
 
-    init() {
+    init(_ coordinator: AppCoordinator) {
+        self.coordinator = coordinator
         addTextFieldValueSubscriber()
     }
 
@@ -48,12 +52,13 @@ final class EntryViewModel: ObservableObject {
 extension EntryViewModel {
     func requestPoints() {
         guard let pointsNumber else { return }
-        hudItem.showProgressHUD = true
+        hudItem = .init(showProgressHUD: true)
         Task(priority: .background) {
             do {
                 let hub = try await api.requestPoints(pointsNumber)
                 await MainActor.run(body: {
                     hudItem = .init(showProgressHUD: false, result: .success(()))
+                    coordinator.show(.detail(pointsHUB: hub))
                 })
             } catch {
                 await MainActor.run(body: {

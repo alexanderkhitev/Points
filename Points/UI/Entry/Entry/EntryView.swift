@@ -9,10 +9,9 @@ import SwiftUI
 
 struct EntryView: View {
     @StateObject private var viewModel: EntryViewModel
-
     @FocusState private var focusField: EntryViewFocusField?
 
-    init(viewModel: EntryViewModel = .init()) {
+    init(viewModel: EntryViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
 
@@ -76,6 +75,7 @@ struct EntryView: View {
     }
 
     // MARK: - UI functions
+
     private func manageProgressHUD(_ hudItem: ProgressHUDItem) {
         if let result = hudItem.result {
             switch result {
@@ -93,8 +93,9 @@ struct EntryView: View {
 
 struct EntryView_Previews: PreviewProvider {
     static var previews: some View {
+        let coordinator = AppCoordinator()
         NavigationStack {
-            EntryView()
+            EntryView(viewModel: .init(coordinator))
         }
     }
 }

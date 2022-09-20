@@ -11,7 +11,7 @@ import SwiftUI
 class AppCoordinator: Coordinator {
     typealias Route = MainRoute
 
-    var path: NavigationPath
+    @Published var path: NavigationPath
 
     init(path: NavigationPath = .init()) {
         self.path = path
