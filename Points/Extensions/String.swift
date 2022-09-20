@@ -15,7 +15,6 @@ extension String {
             let result = String(match.0)
             return result
         } catch {
-            debugPrint("positiveNumberRegex \(error)")
             return ""
         }
     }

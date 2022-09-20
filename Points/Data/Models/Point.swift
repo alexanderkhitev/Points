@@ -26,7 +26,7 @@ struct Point: Codable, Hashable, Identifiable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = UUID()
-        x = try container.decode(CGFloat.self, forKey: .x)
-        y = try container.decode(CGFloat.self, forKey: .y)
+        x = try container.decode(Double.self, forKey: .x)
+        y = try container.decode(Double.self, forKey: .y)
     }
 }

@@ -31,7 +31,6 @@ final class EntryViewModel: ObservableObject {
             .removeDuplicates()
             .sink { [weak self] numberString in
                 self?.didUpdateInput(numberString)
-                debugPrint("[a]: text field value: \(numberString)")
             }.store(in: &anyCancelleble)
     }
 
@@ -53,17 +52,24 @@ extension EntryViewModel {
         guard let pointsNumber else { return }
         hudItem = .init(showProgressHUD: true)
         Task(priority: .background) {
-            do {
-                let hub = try await api.requestPoints(pointsNumber)
+            let hubTask = Task {
+                var hub = try await api.requestPoints(pointsNumber)
+                hub.createSortedPoints()
+                return hub
+            }
+            let result = await hubTask.result
+            switch result {
+            case .success(let hub):
                 await MainActor.run(body: {
                     hudItem = .init(showProgressHUD: false, result: .success(()))
                     coordinator.show(.detail(pointsHUB: hub))
                 })
-            } catch {
+            case .failure(let error):
                 await MainActor.run(body: {
                     hudItem = .init(showProgressHUD: false, result: .failure(error))
                 })
             }
         }
     }
+
 }

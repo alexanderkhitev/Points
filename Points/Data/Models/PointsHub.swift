@@ -10,6 +10,7 @@ import Foundation
 struct PointsHUB: Codable {
     let id: UUID
     let points: [Point]
+    var sortedPoints: [Point] = []
 
     enum CodingKeys: CodingKey, CaseIterable {
         case points
@@ -26,8 +27,8 @@ struct PointsHUB: Codable {
         points = try container.decodeIfPresent([Point].self, forKey: .points) ?? []
     }
 
-    func fetchSortedPoints(_ points: [Point]) -> [Point] {
-        points.sorted(by: { $0.x < $1.x })
+    mutating func createSortedPoints() {
+        sortedPoints = points.sorted(by: { $0.x < $1.x })
     }
 }
 

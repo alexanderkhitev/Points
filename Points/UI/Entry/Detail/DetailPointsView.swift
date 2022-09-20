@@ -44,7 +44,7 @@ struct DetailPointsView: View {
     private func listSection(_ section: DetailPointsListSection) -> some View {
         Section(section.title) {
             ForEach(viewModel.hub.points) { point in
-                Text("x: \(point.x), y: \(point.y)")
+                Text("x: \(point.x.description), y: \(point.y.description)")
             }
         }
     }
