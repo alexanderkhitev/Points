@@ -52,7 +52,9 @@ struct DetailPointsView: View {
     @ViewBuilder
     private func graphSection(_ section: DetailPointsListSection) -> some View {
         Section(section.title) {
-            DetailPointsListGraphRow(pointsHUB: viewModel.hub)
+            DetailPointsListGraphRow(pointsHUB: viewModel.hub) {
+                
+            }
         }
     }
 

@@ -10,7 +10,7 @@ import Foundation
 struct PointsHUBMock {
     static func instance() -> PointsHUB {
         var points = [Point]()
-        for _ in 0..<5 {
+        for _ in 0..<30 {
             let point = Point(x: .random(in: -1000...999),
                               y: .random(in: -1000...999))
             points.append(point)

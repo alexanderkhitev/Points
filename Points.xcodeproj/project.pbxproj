@@ -31,6 +31,12 @@
 		343B2EE728D8EBC300F8E6EF /* PointsEndpoit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */; };
 		343B2EE928D8F55A00F8E6EF /* PointsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */; };
 		348EC51728DB894100069987 /* PointsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC51628DB894100069987 /* PointsChart.swift */; };
+		348EC51A28DBA02100069987 /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC51928DBA02100069987 /* ListRow.swift */; };
+		348EC51E28DBA0B700069987 /* HighlightedBackgroundButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC51D28DBA0B700069987 /* HighlightedBackgroundButtonStyle.swift */; };
+		348EC52128DBA18E00069987 /* ListDisclosureIndicatorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC52028DBA18E00069987 /* ListDisclosureIndicatorRow.swift */; };
+		348EC52328DBA1C800069987 /* ListRowDisclocuredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC52228DBA1C800069987 /* ListRowDisclocuredView.swift */; };
+		348EC52628DBA1F500069987 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC52528DBA1F500069987 /* Padding.swift */; };
+		348EC52828DBA22000069987 /* ListRowDisclosureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC52728DBA22000069987 /* ListRowDisclosureIndicator.swift */; };
 		34AFFD7628D9B95600DF54E3 /* DetailPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */; };
 		34AFFD7928D9B96C00DF54E3 /* DetailPointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */; };
 		34AFFD7D28D9C95200DF54E3 /* PointsHUBMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */; };
@@ -83,6 +89,12 @@
 		343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsEndpoit.swift; sourceTree = "<group>"; };
 		343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsAPI.swift; sourceTree = "<group>"; };
 		348EC51628DB894100069987 /* PointsChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsChart.swift; sourceTree = "<group>"; };
+		348EC51928DBA02100069987 /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		348EC51D28DBA0B700069987 /* HighlightedBackgroundButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightedBackgroundButtonStyle.swift; sourceTree = "<group>"; };
+		348EC52028DBA18E00069987 /* ListDisclosureIndicatorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDisclosureIndicatorRow.swift; sourceTree = "<group>"; };
+		348EC52228DBA1C800069987 /* ListRowDisclocuredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowDisclocuredView.swift; sourceTree = "<group>"; };
+		348EC52528DBA1F500069987 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		348EC52728DBA22000069987 /* ListRowDisclosureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowDisclosureIndicator.swift; sourceTree = "<group>"; };
 		34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsView.swift; sourceTree = "<group>"; };
 		34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsViewModel.swift; sourceTree = "<group>"; };
 		34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsHUBMock.swift; sourceTree = "<group>"; };
@@ -141,6 +153,7 @@
 		343B2E7728D8711900F8E6EF /* Points */ = {
 			isa = PBXGroup;
 			children = (
+				348EC51B28DBA09900069987 /* DesignSystem */,
 				343B2EA228D873A900F8E6EF /* App */,
 				343B2ED428D8E4F900F8E6EF /* Data */,
 				343B2EA528D8770300F8E6EF /* Cores */,
@@ -252,6 +265,7 @@
 		343B2EC228D8B74500F8E6EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				348EC52428DBA1E600069987 /* Enums */,
 				348EC51528DB892F00069987 /* Chart */,
 				343B2EC328D8B74C00F8E6EF /* HUDs */,
 			);
@@ -307,6 +321,58 @@
 				348EC51628DB894100069987 /* PointsChart.swift */,
 			);
 			path = Chart;
+			sourceTree = "<group>";
+		};
+		348EC51828DBA01B00069987 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				348EC52928DBA25100069987 /* ListDisclosureIndicatorRow */,
+				348EC51928DBA02100069987 /* ListRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		348EC51B28DBA09900069987 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				348EC51F28DBA18000069987 /* UI */,
+				348EC51C28DBA0A700069987 /* ButtonStyles */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		348EC51C28DBA0A700069987 /* ButtonStyles */ = {
+			isa = PBXGroup;
+			children = (
+				348EC51D28DBA0B700069987 /* HighlightedBackgroundButtonStyle.swift */,
+			);
+			path = ButtonStyles;
+			sourceTree = "<group>";
+		};
+		348EC51F28DBA18000069987 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				348EC51828DBA01B00069987 /* Rows */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		348EC52428DBA1E600069987 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				348EC52528DBA1F500069987 /* Padding.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		348EC52928DBA25100069987 /* ListDisclosureIndicatorRow */ = {
+			isa = PBXGroup;
+			children = (
+				348EC52028DBA18E00069987 /* ListDisclosureIndicatorRow.swift */,
+				348EC52228DBA1C800069987 /* ListRowDisclocuredView.swift */,
+				348EC52728DBA22000069987 /* ListRowDisclosureIndicator.swift */,
+			);
+			path = ListDisclosureIndicatorRow;
 			sourceTree = "<group>";
 		};
 		34AFFD7328D9B8C100DF54E3 /* Detail */ = {
@@ -515,22 +581,28 @@
 				343B2ECE28D8DB0F00F8E6EF /* EntryViewFocusField.swift in Sources */,
 				34AFFD8328DA254A00DF54E3 /* DetailPointsListGraphRow.swift in Sources */,
 				343B2E7B28D8711900F8E6EF /* AppView.swift in Sources */,
+				348EC52128DBA18E00069987 /* ListDisclosureIndicatorRow.swift in Sources */,
 				348EC51728DB894100069987 /* PointsChart.swift in Sources */,
 				34AFFD8028D9CC1500DF54E3 /* DetailPointsListSection.swift in Sources */,
+				348EC51E28DBA0B700069987 /* HighlightedBackgroundButtonStyle.swift in Sources */,
 				343B2ED928D8E51F00F8E6EF /* Point.swift in Sources */,
 				343B2E7928D8711900F8E6EF /* PointsApp.swift in Sources */,
+				348EC52628DBA1F500069987 /* Padding.swift in Sources */,
 				343B2EE728D8EBC300F8E6EF /* PointsEndpoit.swift in Sources */,
 				343B2EC528D8B76F00F8E6EF /* ProgressHUD.swift in Sources */,
 				34AFFD7D28D9C95200DF54E3 /* PointsHUBMock.swift in Sources */,
 				34BF968228DA279300F675BE /* DetailPointsListPointRow.swift in Sources */,
 				343B2EAC28D8797400F8E6EF /* AppCoordinator.swift in Sources */,
 				34AFFD7928D9B96C00DF54E3 /* DetailPointsViewModel.swift in Sources */,
+				348EC52328DBA1C800069987 /* ListRowDisclocuredView.swift in Sources */,
 				343B2EB128D87BD000F8E6EF /* EntryViewModel.swift in Sources */,
 				343B2EE028D8EA5200F8E6EF /* ProgressHUDItem.swift in Sources */,
 				343B2EAA28D8775900F8E6EF /* MainRoute.swift in Sources */,
+				348EC52828DBA22000069987 /* ListRowDisclosureIndicator.swift in Sources */,
 				34AFFD7628D9B95600DF54E3 /* DetailPointsView.swift in Sources */,
 				343B2EA828D8771B00F8E6EF /* Coordinator.swift in Sources */,
 				343B2EBB28D89B0000F8E6EF /* String.swift in Sources */,
+				348EC51A28DBA02100069987 /* ListRow.swift in Sources */,
 				343B2EAF28D87AF400F8E6EF /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
