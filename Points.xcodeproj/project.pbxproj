@@ -30,6 +30,7 @@
 		343B2EE528D8EBA000F8E6EF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 343B2EE428D8EBA000F8E6EF /* Moya */; };
 		343B2EE728D8EBC300F8E6EF /* PointsEndpoit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */; };
 		343B2EE928D8F55A00F8E6EF /* PointsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */; };
+		348EC51728DB894100069987 /* PointsChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EC51628DB894100069987 /* PointsChart.swift */; };
 		34AFFD7628D9B95600DF54E3 /* DetailPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */; };
 		34AFFD7928D9B96C00DF54E3 /* DetailPointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */; };
 		34AFFD7D28D9C95200DF54E3 /* PointsHUBMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */; };
@@ -81,6 +82,7 @@
 		343B2EDF28D8EA5200F8E6EF /* ProgressHUDItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUDItem.swift; sourceTree = "<group>"; };
 		343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsEndpoit.swift; sourceTree = "<group>"; };
 		343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsAPI.swift; sourceTree = "<group>"; };
+		348EC51628DB894100069987 /* PointsChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsChart.swift; sourceTree = "<group>"; };
 		34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsView.swift; sourceTree = "<group>"; };
 		34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsViewModel.swift; sourceTree = "<group>"; };
 		34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsHUBMock.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 		343B2EC228D8B74500F8E6EF /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				348EC51528DB892F00069987 /* Chart */,
 				343B2EC328D8B74C00F8E6EF /* HUDs */,
 			);
 			path = Common;
@@ -296,6 +299,14 @@
 				343B2ED828D8E51F00F8E6EF /* Point.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		348EC51528DB892F00069987 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				348EC51628DB894100069987 /* PointsChart.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		34AFFD7328D9B8C100DF54E3 /* Detail */ = {
@@ -504,6 +515,7 @@
 				343B2ECE28D8DB0F00F8E6EF /* EntryViewFocusField.swift in Sources */,
 				34AFFD8328DA254A00DF54E3 /* DetailPointsListGraphRow.swift in Sources */,
 				343B2E7B28D8711900F8E6EF /* AppView.swift in Sources */,
+				348EC51728DB894100069987 /* PointsChart.swift in Sources */,
 				34AFFD8028D9CC1500DF54E3 /* DetailPointsListSection.swift in Sources */,
 				343B2ED928D8E51F00F8E6EF /* Point.swift in Sources */,
 				343B2E7928D8711900F8E6EF /* PointsApp.swift in Sources */,

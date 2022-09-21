@@ -12,28 +12,10 @@ struct DetailPointsListGraphRow: View {
     let pointsHUB: PointsHUB
 
     var body: some View {
-        GeometryReader { geometry in
-            ScrollView(.horizontal) {
-                Chart(pointsHUB.sortedPoints) { point in
-                    LineMark(x: .value("x", point.x),
-                             y: .value("y", point.y))
-                    .lineStyle(.init(lineWidth: 3,
-                                     lineCap: .round,
-                                     lineJoin: .round))
-                    .interpolationMethod(.catmullRom)
-                    .symbol(.circle)
-                }
-                .frame(minWidth: minScrollWidth(geometry))
-                .padding([.vertical, .trailing])
-            }
-        }
-        .frame(height: 300)
+        PointsChart(pointsHUB: pointsHUB)
+            .frame(height: 250)
     }
 
-    private func minScrollWidth(_ geometry: GeometryProxy) -> CGFloat {
-        let width = max(CGFloat(pointsHUB.sortedPoints.count) * 10, geometry.size.width)
-        return width
-    }
 }
 
 struct DetailPointsListGraphRow_Previews: PreviewProvider {

@@ -53,9 +53,13 @@ extension EntryViewModel {
         hudItem = .init(showProgressHUD: true)
         Task(priority: .background) {
             let hubTask = Task {
-                var hub = try await api.requestPoints(pointsNumber)
+                // TODO: - Alex
+                var hub = PointsHUBMock.instance()
                 hub.createSortedPoints()
                 return hub
+//                var hub = try await api.requestPoints(pointsNumber)
+//                hub.createSortedPoints()
+//                return hub
             }
             let result = await hubTask.result
             switch result {
