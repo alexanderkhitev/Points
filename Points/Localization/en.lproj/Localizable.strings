@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Points
+
+  Created by Alexander Khitev on 9/19/22.
+  
+*/
+
+"Start" = "Start";
+"Request a specific number of points" = "Request a specific number of points";
+"You can request from 1 to 1000 points" = "You can request from 1 to 1000 points";
+"Please entry number of points" = "Please entry number of points";
+"Points" = "Points";
+"Graph" = "Graph";
+"List" = "List";

@@ -8,12 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		343B2E7928D8711900F8E6EF /* PointsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2E7828D8711900F8E6EF /* PointsApp.swift */; };
-		343B2E7B28D8711900F8E6EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2E7A28D8711900F8E6EF /* ContentView.swift */; };
+		343B2E7B28D8711900F8E6EF /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2E7A28D8711900F8E6EF /* AppView.swift */; };
 		343B2E7D28D8711A00F8E6EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343B2E7C28D8711A00F8E6EF /* Assets.xcassets */; };
 		343B2E8028D8711A00F8E6EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 343B2E7F28D8711A00F8E6EF /* Preview Assets.xcassets */; };
 		343B2E8A28D8711A00F8E6EF /* PointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2E8928D8711A00F8E6EF /* PointsTests.swift */; };
 		343B2E9428D8711A00F8E6EF /* PointsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2E9328D8711A00F8E6EF /* PointsUITests.swift */; };
 		343B2E9628D8711A00F8E6EF /* PointsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2E9528D8711A00F8E6EF /* PointsUITestsLaunchTests.swift */; };
+		343B2EA828D8771B00F8E6EF /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EA728D8771B00F8E6EF /* Coordinator.swift */; };
+		343B2EAA28D8775900F8E6EF /* MainRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EA928D8775900F8E6EF /* MainRoute.swift */; };
+		343B2EAC28D8797400F8E6EF /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EAB28D8797400F8E6EF /* AppCoordinator.swift */; };
+		343B2EAF28D87AF400F8E6EF /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EAE28D87AF400F8E6EF /* EntryView.swift */; };
+		343B2EB128D87BD000F8E6EF /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EB028D87BD000F8E6EF /* EntryViewModel.swift */; };
+		343B2EB528D8812600F8E6EF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 343B2EB728D8812600F8E6EF /* Localizable.strings */; };
+		343B2EBB28D89B0000F8E6EF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EBA28D89B0000F8E6EF /* String.swift */; };
+		343B2EC528D8B76F00F8E6EF /* ProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EC428D8B76F00F8E6EF /* ProgressHUD.swift */; };
+		343B2ECE28D8DB0F00F8E6EF /* EntryViewFocusField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2ECD28D8DB0F00F8E6EF /* EntryViewFocusField.swift */; };
+		343B2ED728D8E50700F8E6EF /* PointsHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2ED628D8E50700F8E6EF /* PointsHub.swift */; };
+		343B2ED928D8E51F00F8E6EF /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2ED828D8E51F00F8E6EF /* Point.swift */; };
+		343B2EE028D8EA5200F8E6EF /* ProgressHUDItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EDF28D8EA5200F8E6EF /* ProgressHUDItem.swift */; };
+		343B2EE328D8EBA000F8E6EF /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 343B2EE228D8EBA000F8E6EF /* CombineMoya */; };
+		343B2EE528D8EBA000F8E6EF /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 343B2EE428D8EBA000F8E6EF /* Moya */; };
+		343B2EE728D8EBC300F8E6EF /* PointsEndpoit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */; };
+		343B2EE928D8F55A00F8E6EF /* PointsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */; };
+		34AFFD7628D9B95600DF54E3 /* DetailPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */; };
+		34AFFD7928D9B96C00DF54E3 /* DetailPointsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */; };
+		34AFFD7D28D9C95200DF54E3 /* PointsHUBMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */; };
+		34AFFD8028D9CC1500DF54E3 /* DetailPointsListSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD7F28D9CC1500DF54E3 /* DetailPointsListSection.swift */; };
+		34AFFD8328DA254A00DF54E3 /* DetailPointsListGraphRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34AFFD8228DA254A00DF54E3 /* DetailPointsListGraphRow.swift */; };
+		34BF968228DA279300F675BE /* DetailPointsListPointRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF968128DA279300F675BE /* DetailPointsListPointRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +58,7 @@
 /* Begin PBXFileReference section */
 		343B2E7528D8711900F8E6EF /* Points.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Points.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		343B2E7828D8711900F8E6EF /* PointsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsApp.swift; sourceTree = "<group>"; };
-		343B2E7A28D8711900F8E6EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		343B2E7A28D8711900F8E6EF /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		343B2E7C28D8711A00F8E6EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		343B2E7F28D8711A00F8E6EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		343B2E8528D8711A00F8E6EF /* PointsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +66,27 @@
 		343B2E8F28D8711A00F8E6EF /* PointsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PointsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		343B2E9328D8711A00F8E6EF /* PointsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsUITests.swift; sourceTree = "<group>"; };
 		343B2E9528D8711A00F8E6EF /* PointsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		343B2EA728D8771B00F8E6EF /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		343B2EA928D8775900F8E6EF /* MainRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRoute.swift; sourceTree = "<group>"; };
+		343B2EAB28D8797400F8E6EF /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		343B2EAE28D87AF400F8E6EF /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		343B2EB028D87BD000F8E6EF /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
+		343B2EB628D8812600F8E6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		343B2EB828D8812900F8E6EF /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		343B2EBA28D89B0000F8E6EF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		343B2EC428D8B76F00F8E6EF /* ProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUD.swift; sourceTree = "<group>"; };
+		343B2ECD28D8DB0F00F8E6EF /* EntryViewFocusField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewFocusField.swift; sourceTree = "<group>"; };
+		343B2ED628D8E50700F8E6EF /* PointsHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsHub.swift; sourceTree = "<group>"; };
+		343B2ED828D8E51F00F8E6EF /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		343B2EDF28D8EA5200F8E6EF /* ProgressHUDItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressHUDItem.swift; sourceTree = "<group>"; };
+		343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsEndpoit.swift; sourceTree = "<group>"; };
+		343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsAPI.swift; sourceTree = "<group>"; };
+		34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsView.swift; sourceTree = "<group>"; };
+		34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsViewModel.swift; sourceTree = "<group>"; };
+		34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsHUBMock.swift; sourceTree = "<group>"; };
+		34AFFD7F28D9CC1500DF54E3 /* DetailPointsListSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsListSection.swift; sourceTree = "<group>"; };
+		34AFFD8228DA254A00DF54E3 /* DetailPointsListGraphRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsListGraphRow.swift; sourceTree = "<group>"; };
+		34BF968128DA279300F675BE /* DetailPointsListPointRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPointsListPointRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				343B2EE528D8EBA000F8E6EF /* Moya in Frameworks */,
+				343B2EE328D8EBA000F8E6EF /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +139,13 @@
 		343B2E7728D8711900F8E6EF /* Points */ = {
 			isa = PBXGroup;
 			children = (
-				343B2E7828D8711900F8E6EF /* PointsApp.swift */,
-				343B2E7A28D8711900F8E6EF /* ContentView.swift */,
+				343B2EA228D873A900F8E6EF /* App */,
+				343B2ED428D8E4F900F8E6EF /* Data */,
+				343B2EA528D8770300F8E6EF /* Cores */,
+				343B2EA328D873B300F8E6EF /* UI */,
+				343B2EB228D8811100F8E6EF /* Localization */,
+				343B2EB928D89AF500F8E6EF /* Extensions */,
+				34AFFD7A28D9C92900DF54E3 /* SwiftUIPreviews */,
 				343B2E7C28D8711A00F8E6EF /* Assets.xcassets */,
 				343B2E7E28D8711A00F8E6EF /* Preview Content */,
 			);
@@ -127,6 +177,189 @@
 			path = PointsUITests;
 			sourceTree = "<group>";
 		};
+		343B2EA228D873A900F8E6EF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				343B2E7828D8711900F8E6EF /* PointsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		343B2EA328D873B300F8E6EF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EA428D875A400F8E6EF /* AppView */,
+				343B2EC228D8B74500F8E6EF /* Common */,
+				343B2EAD28D87ADD00F8E6EF /* Entry */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		343B2EA428D875A400F8E6EF /* AppView */ = {
+			isa = PBXGroup;
+			children = (
+				343B2E7A28D8711900F8E6EF /* AppView.swift */,
+			);
+			path = AppView;
+			sourceTree = "<group>";
+		};
+		343B2EA528D8770300F8E6EF /* Cores */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EC928D8B88600F8E6EF /* Network */,
+				343B2EA628D8771100F8E6EF /* Navigation */,
+			);
+			path = Cores;
+			sourceTree = "<group>";
+		};
+		343B2EA628D8771100F8E6EF /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EAB28D8797400F8E6EF /* AppCoordinator.swift */,
+				343B2EA728D8771B00F8E6EF /* Coordinator.swift */,
+				343B2EA928D8775900F8E6EF /* MainRoute.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		343B2EAD28D87ADD00F8E6EF /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD7428D9B8E400DF54E3 /* Entry */,
+				34AFFD7328D9B8C100DF54E3 /* Detail */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		343B2EB228D8811100F8E6EF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EB728D8812600F8E6EF /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		343B2EB928D89AF500F8E6EF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EBA28D89B0000F8E6EF /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		343B2EC228D8B74500F8E6EF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EC328D8B74C00F8E6EF /* HUDs */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		343B2EC328D8B74C00F8E6EF /* HUDs */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EC428D8B76F00F8E6EF /* ProgressHUD.swift */,
+				343B2EDF28D8EA5200F8E6EF /* ProgressHUDItem.swift */,
+			);
+			path = HUDs;
+			sourceTree = "<group>";
+		};
+		343B2EC928D8B88600F8E6EF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EE628D8EBC300F8E6EF /* PointsEndpoit.swift */,
+				343B2EE828D8F55A00F8E6EF /* PointsAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		343B2ECC28D8DAFB00F8E6EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				343B2EB028D87BD000F8E6EF /* EntryViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		343B2ED428D8E4F900F8E6EF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				343B2ED528D8E50100F8E6EF /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		343B2ED528D8E50100F8E6EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				343B2ED628D8E50700F8E6EF /* PointsHub.swift */,
+				343B2ED828D8E51F00F8E6EF /* Point.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34AFFD7328D9B8C100DF54E3 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD8128DA251E00DF54E3 /* Rows */,
+				34AFFD7E28D9CBC600DF54E3 /* Sections */,
+				34AFFD7728D9B95C00DF54E3 /* Models */,
+				34AFFD7528D9B95600DF54E3 /* DetailPointsView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		34AFFD7428D9B8E400DF54E3 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				343B2ECC28D8DAFB00F8E6EF /* Models */,
+				343B2EAE28D87AF400F8E6EF /* EntryView.swift */,
+				343B2ECD28D8DB0F00F8E6EF /* EntryViewFocusField.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		34AFFD7728D9B95C00DF54E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD7828D9B96C00DF54E3 /* DetailPointsViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34AFFD7A28D9C92900DF54E3 /* SwiftUIPreviews */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD7B28D9C93500DF54E3 /* Mock */,
+			);
+			path = SwiftUIPreviews;
+			sourceTree = "<group>";
+		};
+		34AFFD7B28D9C93500DF54E3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD7C28D9C95200DF54E3 /* PointsHUBMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		34AFFD7E28D9CBC600DF54E3 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD7F28D9CC1500DF54E3 /* DetailPointsListSection.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		34AFFD8128DA251E00DF54E3 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				34AFFD8228DA254A00DF54E3 /* DetailPointsListGraphRow.swift */,
+				34BF968128DA279300F675BE /* DetailPointsListPointRow.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +376,10 @@
 			dependencies = (
 			);
 			name = Points;
+			packageProductDependencies = (
+				343B2EE228D8EBA000F8E6EF /* CombineMoya */,
+				343B2EE428D8EBA000F8E6EF /* Moya */,
+			);
 			productName = Points;
 			productReference = 343B2E7528D8711900F8E6EF /* Points.app */;
 			productType = "com.apple.product-type.application";
@@ -213,8 +450,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 343B2E6C28D8711900F8E6EF;
+			packageReferences = (
+				343B2EE128D8EBA000F8E6EF /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 343B2E7628D8711900F8E6EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				343B2E8028D8711A00F8E6EF /* Preview Assets.xcassets in Resources */,
+				343B2EB528D8812600F8E6EF /* Localizable.strings in Resources */,
 				343B2E7D28D8711A00F8E6EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,8 +499,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343B2E7B28D8711900F8E6EF /* ContentView.swift in Sources */,
+				343B2ED728D8E50700F8E6EF /* PointsHub.swift in Sources */,
+				343B2EE928D8F55A00F8E6EF /* PointsAPI.swift in Sources */,
+				343B2ECE28D8DB0F00F8E6EF /* EntryViewFocusField.swift in Sources */,
+				34AFFD8328DA254A00DF54E3 /* DetailPointsListGraphRow.swift in Sources */,
+				343B2E7B28D8711900F8E6EF /* AppView.swift in Sources */,
+				34AFFD8028D9CC1500DF54E3 /* DetailPointsListSection.swift in Sources */,
+				343B2ED928D8E51F00F8E6EF /* Point.swift in Sources */,
 				343B2E7928D8711900F8E6EF /* PointsApp.swift in Sources */,
+				343B2EE728D8EBC300F8E6EF /* PointsEndpoit.swift in Sources */,
+				343B2EC528D8B76F00F8E6EF /* ProgressHUD.swift in Sources */,
+				34AFFD7D28D9C95200DF54E3 /* PointsHUBMock.swift in Sources */,
+				34BF968228DA279300F675BE /* DetailPointsListPointRow.swift in Sources */,
+				343B2EAC28D8797400F8E6EF /* AppCoordinator.swift in Sources */,
+				34AFFD7928D9B96C00DF54E3 /* DetailPointsViewModel.swift in Sources */,
+				343B2EB128D87BD000F8E6EF /* EntryViewModel.swift in Sources */,
+				343B2EE028D8EA5200F8E6EF /* ProgressHUDItem.swift in Sources */,
+				343B2EAA28D8775900F8E6EF /* MainRoute.swift in Sources */,
+				34AFFD7628D9B95600DF54E3 /* DetailPointsView.swift in Sources */,
+				343B2EA828D8771B00F8E6EF /* Coordinator.swift in Sources */,
+				343B2EBB28D89B0000F8E6EF /* String.swift in Sources */,
+				343B2EAF28D87AF400F8E6EF /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +554,18 @@
 			targetProxy = 343B2E9028D8711A00F8E6EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		343B2EB728D8812600F8E6EF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				343B2EB628D8812600F8E6EF /* en */,
+				343B2EB828D8812900F8E6EF /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		343B2E9728D8711A00F8E6EF /* Debug */ = {
@@ -583,6 +856,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		343B2EE128D8EBA000F8E6EF /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		343B2EE228D8EBA000F8E6EF /* CombineMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 343B2EE128D8EBA000F8E6EF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = CombineMoya;
+		};
+		343B2EE428D8EBA000F8E6EF /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 343B2EE128D8EBA000F8E6EF /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 343B2E6D28D8711900F8E6EF /* Project object */;
 }
