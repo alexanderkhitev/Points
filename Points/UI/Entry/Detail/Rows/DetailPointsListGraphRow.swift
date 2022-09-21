@@ -23,11 +23,16 @@ struct DetailPointsListGraphRow: View {
                     .interpolationMethod(.catmullRom)
                     .symbol(.circle)
                 }
-                .frame(minWidth: max(CGFloat(pointsHUB.sortedPoints.count) * 10, geometry.size.width))
+                .frame(minWidth: minScrollWidth(geometry))
                 .padding([.vertical, .trailing])
             }
         }
         .frame(height: 300)
+    }
+
+    private func minScrollWidth(_ geometry: GeometryProxy) -> CGFloat {
+        let width = max(CGFloat(pointsHUB.sortedPoints.count) * 10, geometry.size.width)
+        return width
     }
 }
 
